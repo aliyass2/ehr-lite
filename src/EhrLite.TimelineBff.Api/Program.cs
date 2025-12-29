@@ -59,6 +59,7 @@ app.UseSwagger();
 app.UseSwaggerUI();
 app.MapGet("/api/timeline/{patientId:guid}", async (
     Guid patientId,
+    IConfiguration config,
     PatientRegistryClient patients,
     EncountersClient encounters,
     ClinicalDocsClient clinicalDocs,
@@ -79,14 +80,15 @@ app.MapGet("/api/timeline/{patientId:guid}", async (
         catch { return []; }
     }
 
+    // Day 2: false (only 3 services)
+    // Day 3: true (enable meds/labs/audit)
+    var includeOptional = config.GetValue("Timeline:IncludeOptional", false);
+
     var patientTask = Safe(() => patients.GetPatientAsync(patientId, ct));
     var encountersTask = SafeList(() => encounters.ListAsync(patientId, ct));
     var notesTask = SafeList(() => clinicalDocs.ListNotesAsync(patientId, ct));
-    var medsTask = SafeList(() => meds.ListAsync(patientId, ct));
-    var labsTask = SafeList(() => labs.ListAsync(patientId, ct));
-    var auditTask = SafeList(() => audit.ListAsync(patientId, ct));
 
-    await Task.WhenAll(patientTask, encountersTask, notesTask, medsTask, labsTask, auditTask);
+    await Task.WhenAll(patientTask, encountersTask, notesTask);
 
     var items = new List<TimelineItem>();
 
@@ -97,21 +99,31 @@ app.MapGet("/api/timeline/{patientId:guid}", async (
         new TimelineItem("clinical-note", n.CreatedAt, n.Title,
             n.Body.Length > 120 ? n.Body[..120] + "..." : n.Body, n)));
 
-    items.AddRange(medsTask.Result.Select(m =>
-        new TimelineItem("medication", m.StartedAt, m.Name, m.Dose, m)));
+    // IMPORTANT: optional calls are created only when enabled
+    if (includeOptional)
+    {
+        var medsTask = SafeList(() => meds.ListAsync(patientId, ct));
+        var labsTask = SafeList(() => labs.ListAsync(patientId, ct));
+        var auditTask = SafeList(() => audit.ListAsync(patientId, ct));
 
-    items.AddRange(labsTask.Result.Select(l =>
-        new TimelineItem("lab", l.CollectedAt, l.TestName,
-            $"{l.Value} {l.Unit}".Trim(), l)));
+        await Task.WhenAll(medsTask, labsTask, auditTask);
 
-    items.AddRange(auditTask.Result.Select(a =>
-        new TimelineItem("audit", a.At, a.Action, a.Actor, a)));
+        items.AddRange(medsTask.Result.Select(m =>
+            new TimelineItem("medication", m.StartedAt, m.Name, m.Dose, m)));
+
+        items.AddRange(labsTask.Result.Select(l =>
+            new TimelineItem("lab", l.CollectedAt, l.TestName,
+                $"{l.Value} {l.Unit}".Trim(), l)));
+
+        items.AddRange(auditTask.Result.Select(a =>
+            new TimelineItem("audit", a.At, a.Action, a.Actor, a)));
+    }
 
     var ordered = items.OrderByDescending(x => x.At).ToList();
-
     return Results.Ok(new TimelineResponse(patientTask.Result, ordered));
 })
 .WithName("GetPatientTimeline");
+
 
 app.MapHealthChecks("/health");
 app.MapHealthChecks("/alive", new HealthCheckOptions
