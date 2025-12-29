@@ -1,0 +1,6 @@
+@EhrLite.LabsDocs.Api_HostAddress = http://localhost:5290
+
+GET {{EhrLite.LabsDocs.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

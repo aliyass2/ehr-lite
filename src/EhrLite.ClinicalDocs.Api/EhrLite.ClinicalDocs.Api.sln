@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EhrLite.ClinicalDocs.Api", "EhrLite.ClinicalDocs.Api.csproj", "{7F074440-BE64-9FEB-645C-8F607338799F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F074440-BE64-9FEB-645C-8F607338799F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F074440-BE64-9FEB-645C-8F607338799F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F074440-BE64-9FEB-645C-8F607338799F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F074440-BE64-9FEB-645C-8F607338799F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE687866-AEAD-48FD-BB1A-2C43D296C8EB}
+	EndGlobalSection
+EndGlobal

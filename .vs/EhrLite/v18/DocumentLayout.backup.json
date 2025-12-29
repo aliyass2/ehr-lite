@@ -1,0 +1,831 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.timelinebff.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|solutionrelative:src\\ehrlite.timelinebff.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.timelinebff.api\\ehrlite.timelinebff.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|solutionrelative:src\\ehrlite.timelinebff.api\\ehrlite.timelinebff.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.timelinebff.api\\clients\\labsdocsclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|solutionrelative:src\\ehrlite.timelinebff.api\\clients\\labsdocsclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.timelinebff.api\\clients\\encountersclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|solutionrelative:src\\ehrlite.timelinebff.api\\clients\\encountersclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.timelinebff.api\\clients\\auditclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|solutionrelative:src\\ehrlite.timelinebff.api\\clients\\auditclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.timelinebff.api\\clients\\medicationsclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|solutionrelative:src\\ehrlite.timelinebff.api\\clients\\medicationsclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.timelinebff.api\\clients\\clinicaldocsclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|solutionrelative:src\\ehrlite.timelinebff.api\\clients\\clinicaldocsclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.timelinebff.api\\clients\\patientregistryclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|solutionrelative:src\\ehrlite.timelinebff.api\\clients\\patientregistryclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.timelinebff.api\\clients\\serviceoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|solutionrelative:src\\ehrlite.timelinebff.api\\clients\\serviceoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABF4A0CE-2A11-46FC-8E7B-4ABF831C48F6}|EhrLite.ServiceDefaults\\EhrLite.ServiceDefaults.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\ehrlite.servicedefaults\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABF4A0CE-2A11-46FC-8E7B-4ABF831C48F6}|EhrLite.ServiceDefaults\\EhrLite.ServiceDefaults.csproj|solutionrelative:ehrlite.servicedefaults\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABF4A0CE-2A11-46FC-8E7B-4ABF831C48F6}|EhrLite.ServiceDefaults\\EhrLite.ServiceDefaults.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\ehrlite.servicedefaults\\ehrlite.servicedefaults.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{ABF4A0CE-2A11-46FC-8E7B-4ABF831C48F6}|EhrLite.ServiceDefaults\\EhrLite.ServiceDefaults.csproj|solutionrelative:ehrlite.servicedefaults\\ehrlite.servicedefaults.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2150C52-1735-46A1-A04D-2C9C8B609990}|EhrLite.AppHost\\EhrLite.AppHost.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\ehrlite.apphost\\apphost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2150C52-1735-46A1-A04D-2C9C8B609990}|EhrLite.AppHost\\EhrLite.AppHost.csproj|solutionrelative:ehrlite.apphost\\apphost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.timelinebff.api\\contracts\\timelineresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|solutionrelative:src\\ehrlite.timelinebff.api\\contracts\\timelineresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.timelinebff.api\\contracts\\timelineitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|solutionrelative:src\\ehrlite.timelinebff.api\\contracts\\timelineitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.timelinebff.api\\contracts\\auditdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|solutionrelative:src\\ehrlite.timelinebff.api\\contracts\\auditdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.timelinebff.api\\contracts\\labresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|solutionrelative:src\\ehrlite.timelinebff.api\\contracts\\labresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.timelinebff.api\\contracts\\medicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|solutionrelative:src\\ehrlite.timelinebff.api\\contracts\\medicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.timelinebff.api\\contracts\\clinicalnotedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|solutionrelative:src\\ehrlite.timelinebff.api\\contracts\\clinicalnotedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.timelinebff.api\\contracts\\encounterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|solutionrelative:src\\ehrlite.timelinebff.api\\contracts\\encounterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.timelinebff.api\\contracts\\patientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|solutionrelative:src\\ehrlite.timelinebff.api\\contracts\\patientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.timelinebff.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|solutionrelative:src\\ehrlite.timelinebff.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.timelinebff.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{69957B14-5EA4-4532-A1A7-58FEE210D617}|src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj|solutionrelative:src\\ehrlite.timelinebff.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934230A7-5995-4EFC-8638-26073D95AB93}|src\\EhrLite.PatientRegistry.Api\\EhrLite.PatientRegistry.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.patientregistry.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{934230A7-5995-4EFC-8638-26073D95AB93}|src\\EhrLite.PatientRegistry.Api\\EhrLite.PatientRegistry.Api.csproj|solutionrelative:src\\ehrlite.patientregistry.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BB2AAA-CF51-4DC2-B0D6-573EAB617B9F}|src\\EhrLite.Medications.Api\\EhrLite.Medications.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.medications.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{49BB2AAA-CF51-4DC2-B0D6-573EAB617B9F}|src\\EhrLite.Medications.Api\\EhrLite.Medications.Api.csproj|solutionrelative:src\\ehrlite.medications.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C3E57E9-CBA1-4903-880B-44C01487BF31}|src\\EhrLite.LabsDocs.Api\\EhrLite.LabsDocs.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.labsdocs.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0C3E57E9-CBA1-4903-880B-44C01487BF31}|src\\EhrLite.LabsDocs.Api\\EhrLite.LabsDocs.Api.csproj|solutionrelative:src\\ehrlite.labsdocs.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134E78F6-0CCE-49A1-A34E-A06A1BF2E703}|src\\EhrLite.Identity.Api\\EhrLite.Identity.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.identity.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{134E78F6-0CCE-49A1-A34E-A06A1BF2E703}|src\\EhrLite.Identity.Api\\EhrLite.Identity.Api.csproj|solutionrelative:src\\ehrlite.identity.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EF2DD4B-6323-40B3-B510-E25A47A2BD3F}|src\\EhrLite.Encounters.Api\\EhrLite.Encounters.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.encounters.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2EF2DD4B-6323-40B3-B510-E25A47A2BD3F}|src\\EhrLite.Encounters.Api\\EhrLite.Encounters.Api.csproj|solutionrelative:src\\ehrlite.encounters.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D0C339E-69AF-45A3-817E-C1350C370D5F}|src\\EhrLite.ClinicalDocs.Api\\EhrLite.ClinicalDocs.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.clinicaldocs.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4D0C339E-69AF-45A3-817E-C1350C370D5F}|src\\EhrLite.ClinicalDocs.Api\\EhrLite.ClinicalDocs.Api.csproj|solutionrelative:src\\ehrlite.clinicaldocs.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E175286-A7C5-48C4-AEDE-DBCCB3EA8EEB}|src\\EhrLite.Audit.Api\\EhrLite.Audit.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.audit.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2E175286-A7C5-48C4-AEDE-DBCCB3EA8EEB}|src\\EhrLite.Audit.Api\\EhrLite.Audit.Api.csproj|solutionrelative:src\\ehrlite.audit.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934230A7-5995-4EFC-8638-26073D95AB93}|src\\EhrLite.PatientRegistry.Api\\EhrLite.PatientRegistry.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.patientregistry.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934230A7-5995-4EFC-8638-26073D95AB93}|src\\EhrLite.PatientRegistry.Api\\EhrLite.PatientRegistry.Api.csproj|solutionrelative:src\\ehrlite.patientregistry.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934230A7-5995-4EFC-8638-26073D95AB93}|src\\EhrLite.PatientRegistry.Api\\EhrLite.PatientRegistry.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.patientregistry.api\\patientregistrydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934230A7-5995-4EFC-8638-26073D95AB93}|src\\EhrLite.PatientRegistry.Api\\EhrLite.PatientRegistry.Api.csproj|solutionrelative:src\\ehrlite.patientregistry.api\\patientregistrydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BB2AAA-CF51-4DC2-B0D6-573EAB617B9F}|src\\EhrLite.Medications.Api\\EhrLite.Medications.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.medications.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49BB2AAA-CF51-4DC2-B0D6-573EAB617B9F}|src\\EhrLite.Medications.Api\\EhrLite.Medications.Api.csproj|solutionrelative:src\\ehrlite.medications.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BB2AAA-CF51-4DC2-B0D6-573EAB617B9F}|src\\EhrLite.Medications.Api\\EhrLite.Medications.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.medications.api\\medicationsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49BB2AAA-CF51-4DC2-B0D6-573EAB617B9F}|src\\EhrLite.Medications.Api\\EhrLite.Medications.Api.csproj|solutionrelative:src\\ehrlite.medications.api\\medicationsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C3E57E9-CBA1-4903-880B-44C01487BF31}|src\\EhrLite.LabsDocs.Api\\EhrLite.LabsDocs.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.labsdocs.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C3E57E9-CBA1-4903-880B-44C01487BF31}|src\\EhrLite.LabsDocs.Api\\EhrLite.LabsDocs.Api.csproj|solutionrelative:src\\ehrlite.labsdocs.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EF2DD4B-6323-40B3-B510-E25A47A2BD3F}|src\\EhrLite.Encounters.Api\\EhrLite.Encounters.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.encounters.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EF2DD4B-6323-40B3-B510-E25A47A2BD3F}|src\\EhrLite.Encounters.Api\\EhrLite.Encounters.Api.csproj|solutionrelative:src\\ehrlite.encounters.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134E78F6-0CCE-49A1-A34E-A06A1BF2E703}|src\\EhrLite.Identity.Api\\EhrLite.Identity.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.identity.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{134E78F6-0CCE-49A1-A34E-A06A1BF2E703}|src\\EhrLite.Identity.Api\\EhrLite.Identity.Api.csproj|solutionrelative:src\\ehrlite.identity.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EF2DD4B-6323-40B3-B510-E25A47A2BD3F}|src\\EhrLite.Encounters.Api\\EhrLite.Encounters.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.encounters.api\\encounterdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EF2DD4B-6323-40B3-B510-E25A47A2BD3F}|src\\EhrLite.Encounters.Api\\EhrLite.Encounters.Api.csproj|solutionrelative:src\\ehrlite.encounters.api\\encounterdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134E78F6-0CCE-49A1-A34E-A06A1BF2E703}|src\\EhrLite.Identity.Api\\EhrLite.Identity.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.identity.api\\identitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{134E78F6-0CCE-49A1-A34E-A06A1BF2E703}|src\\EhrLite.Identity.Api\\EhrLite.Identity.Api.csproj|solutionrelative:src\\ehrlite.identity.api\\identitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C3E57E9-CBA1-4903-880B-44C01487BF31}|src\\EhrLite.LabsDocs.Api\\EhrLite.LabsDocs.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.labsdocs.api\\labsdocsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C3E57E9-CBA1-4903-880B-44C01487BF31}|src\\EhrLite.LabsDocs.Api\\EhrLite.LabsDocs.Api.csproj|solutionrelative:src\\ehrlite.labsdocs.api\\labsdocsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E175286-A7C5-48C4-AEDE-DBCCB3EA8EEB}|src\\EhrLite.Audit.Api\\EhrLite.Audit.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.audit.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E175286-A7C5-48C4-AEDE-DBCCB3EA8EEB}|src\\EhrLite.Audit.Api\\EhrLite.Audit.Api.csproj|solutionrelative:src\\ehrlite.audit.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E175286-A7C5-48C4-AEDE-DBCCB3EA8EEB}|src\\EhrLite.Audit.Api\\EhrLite.Audit.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.audit.api\\ehrlite.audit.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{2E175286-A7C5-48C4-AEDE-DBCCB3EA8EEB}|src\\EhrLite.Audit.Api\\EhrLite.Audit.Api.csproj|solutionrelative:src\\ehrlite.audit.api\\ehrlite.audit.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D0C339E-69AF-45A3-817E-C1350C370D5F}|src\\EhrLite.ClinicalDocs.Api\\EhrLite.ClinicalDocs.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.clinicaldocs.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D0C339E-69AF-45A3-817E-C1350C370D5F}|src\\EhrLite.ClinicalDocs.Api\\EhrLite.ClinicalDocs.Api.csproj|solutionrelative:src\\ehrlite.clinicaldocs.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D0C339E-69AF-45A3-817E-C1350C370D5F}|src\\EhrLite.ClinicalDocs.Api\\EhrLite.ClinicalDocs.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.clinicaldocs.api\\clinicaldocsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D0C339E-69AF-45A3-817E-C1350C370D5F}|src\\EhrLite.ClinicalDocs.Api\\EhrLite.ClinicalDocs.Api.csproj|solutionrelative:src\\ehrlite.clinicaldocs.api\\clinicaldocsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D0C339E-69AF-45A3-817E-C1350C370D5F}|src\\EhrLite.ClinicalDocs.Api\\EhrLite.ClinicalDocs.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.clinicaldocs.api\\ehrlite.clinicaldocs.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{4D0C339E-69AF-45A3-817E-C1350C370D5F}|src\\EhrLite.ClinicalDocs.Api\\EhrLite.ClinicalDocs.Api.csproj|solutionrelative:src\\ehrlite.clinicaldocs.api\\ehrlite.clinicaldocs.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E175286-A7C5-48C4-AEDE-DBCCB3EA8EEB}|src\\EhrLite.Audit.Api\\EhrLite.Audit.Api.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\src\\ehrlite.audit.api\\auditdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E175286-A7C5-48C4-AEDE-DBCCB3EA8EEB}|src\\EhrLite.Audit.Api\\EhrLite.Audit.Api.csproj|solutionrelative:src\\ehrlite.audit.api\\auditdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2150C52-1735-46A1-A04D-2C9C8B609990}|EhrLite.AppHost\\EhrLite.AppHost.csproj|c:\\users\\ali yass\\desktop\\ehr-lite\\ehrlite.apphost\\ehrlite.apphost.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A2150C52-1735-46A1-A04D-2C9C8B609990}|EhrLite.AppHost\\EhrLite.AppHost.csproj|solutionrelative:ehrlite.apphost\\ehrlite.apphost.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EhrLite.TimelineBff.Api",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj",
+              "RelativeDocumentMoniker": "src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj",
+              "RelativeToolTip": "src\\EhrLite.TimelineBff.Api\\EhrLite.TimelineBff.Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-28T10:20:21.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuditClient.cs",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Clients\\AuditClient.cs",
+              "RelativeDocumentMoniker": "src\\EhrLite.TimelineBff.Api\\Clients\\AuditClient.cs",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Clients\\AuditClient.cs",
+              "RelativeToolTip": "src\\EhrLite.TimelineBff.Api\\Clients\\AuditClient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T10:11:36.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LabsDocsClient.cs",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Clients\\LabsDocsClient.cs",
+              "RelativeDocumentMoniker": "src\\EhrLite.TimelineBff.Api\\Clients\\LabsDocsClient.cs",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Clients\\LabsDocsClient.cs",
+              "RelativeToolTip": "src\\EhrLite.TimelineBff.Api\\Clients\\LabsDocsClient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T10:11:29.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MedicationsClient.cs",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Clients\\MedicationsClient.cs",
+              "RelativeDocumentMoniker": "src\\EhrLite.TimelineBff.Api\\Clients\\MedicationsClient.cs",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Clients\\MedicationsClient.cs",
+              "RelativeToolTip": "src\\EhrLite.TimelineBff.Api\\Clients\\MedicationsClient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T10:11:18.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ClinicalDocsClient.cs",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Clients\\ClinicalDocsClient.cs",
+              "RelativeDocumentMoniker": "src\\EhrLite.TimelineBff.Api\\Clients\\ClinicalDocsClient.cs",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Clients\\ClinicalDocsClient.cs",
+              "RelativeToolTip": "src\\EhrLite.TimelineBff.Api\\Clients\\ClinicalDocsClient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T10:11:10.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EncountersClient.cs",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Clients\\EncountersClient.cs",
+              "RelativeDocumentMoniker": "src\\EhrLite.TimelineBff.Api\\Clients\\EncountersClient.cs",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Clients\\EncountersClient.cs",
+              "RelativeToolTip": "src\\EhrLite.TimelineBff.Api\\Clients\\EncountersClient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T10:11:02.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PatientRegistryClient.cs",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Clients\\PatientRegistryClient.cs",
+              "RelativeDocumentMoniker": "src\\EhrLite.TimelineBff.Api\\Clients\\PatientRegistryClient.cs",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Clients\\PatientRegistryClient.cs",
+              "RelativeToolTip": "src\\EhrLite.TimelineBff.Api\\Clients\\PatientRegistryClient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T10:10:55.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Program.cs",
+              "RelativeDocumentMoniker": "src\\EhrLite.TimelineBff.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Program.cs",
+              "RelativeToolTip": "src\\EhrLite.TimelineBff.Api\\Program.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T06:54:41.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ServiceOptions.cs",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Clients\\ServiceOptions.cs",
+              "RelativeDocumentMoniker": "src\\EhrLite.TimelineBff.Api\\Clients\\ServiceOptions.cs",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Clients\\ServiceOptions.cs",
+              "RelativeToolTip": "src\\EhrLite.TimelineBff.Api\\Clients\\ServiceOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T10:10:40.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Extensions.cs",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\EhrLite.ServiceDefaults\\Extensions.cs",
+              "RelativeDocumentMoniker": "EhrLite.ServiceDefaults\\Extensions.cs",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\EhrLite.ServiceDefaults\\Extensions.cs",
+              "RelativeToolTip": "EhrLite.ServiceDefaults\\Extensions.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAAAG0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T09:25:06.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TimelineResponse.cs",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Contracts\\TimelineResponse.cs",
+              "RelativeDocumentMoniker": "src\\EhrLite.TimelineBff.Api\\Contracts\\TimelineResponse.cs",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Contracts\\TimelineResponse.cs",
+              "RelativeToolTip": "src\\EhrLite.TimelineBff.Api\\Contracts\\TimelineResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T09:17:12.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TimelineItem.cs",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Contracts\\TimelineItem.cs",
+              "RelativeDocumentMoniker": "src\\EhrLite.TimelineBff.Api\\Contracts\\TimelineItem.cs",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Contracts\\TimelineItem.cs",
+              "RelativeToolTip": "src\\EhrLite.TimelineBff.Api\\Contracts\\TimelineItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T09:16:58.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AuditDto.cs",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Contracts\\AuditDto.cs",
+              "RelativeDocumentMoniker": "src\\EhrLite.TimelineBff.Api\\Contracts\\AuditDto.cs",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Contracts\\AuditDto.cs",
+              "RelativeToolTip": "src\\EhrLite.TimelineBff.Api\\Contracts\\AuditDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T09:16:44.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LabResultDto.cs",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Contracts\\LabResultDto.cs",
+              "RelativeDocumentMoniker": "src\\EhrLite.TimelineBff.Api\\Contracts\\LabResultDto.cs",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Contracts\\LabResultDto.cs",
+              "RelativeToolTip": "src\\EhrLite.TimelineBff.Api\\Contracts\\LabResultDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T09:16:33.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MedicationDto.cs",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Contracts\\MedicationDto.cs",
+              "RelativeDocumentMoniker": "src\\EhrLite.TimelineBff.Api\\Contracts\\MedicationDto.cs",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Contracts\\MedicationDto.cs",
+              "RelativeToolTip": "src\\EhrLite.TimelineBff.Api\\Contracts\\MedicationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T09:16:17.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ClinicalNoteDto.cs",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Contracts\\ClinicalNoteDto.cs",
+              "RelativeDocumentMoniker": "src\\EhrLite.TimelineBff.Api\\Contracts\\ClinicalNoteDto.cs",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Contracts\\ClinicalNoteDto.cs",
+              "RelativeToolTip": "src\\EhrLite.TimelineBff.Api\\Contracts\\ClinicalNoteDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T09:16:04.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AppHost.cs",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\EhrLite.AppHost\\AppHost.cs",
+              "RelativeDocumentMoniker": "EhrLite.AppHost\\AppHost.cs",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\EhrLite.AppHost\\AppHost.cs",
+              "RelativeToolTip": "EhrLite.AppHost\\AppHost.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T06:55:59.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EhrLite.ServiceDefaults.csproj",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\EhrLite.ServiceDefaults\\EhrLite.ServiceDefaults.csproj",
+              "RelativeDocumentMoniker": "EhrLite.ServiceDefaults\\EhrLite.ServiceDefaults.csproj",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\EhrLite.ServiceDefaults\\EhrLite.ServiceDefaults.csproj",
+              "RelativeToolTip": "EhrLite.ServiceDefaults\\EhrLite.ServiceDefaults.csproj",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-28T06:34:20.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "EncounterDto.cs",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Contracts\\EncounterDto.cs",
+              "RelativeDocumentMoniker": "src\\EhrLite.TimelineBff.Api\\Contracts\\EncounterDto.cs",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Contracts\\EncounterDto.cs",
+              "RelativeToolTip": "src\\EhrLite.TimelineBff.Api\\Contracts\\EncounterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T09:15:53.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PatientDto.cs",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Contracts\\PatientDto.cs",
+              "RelativeDocumentMoniker": "src\\EhrLite.TimelineBff.Api\\Contracts\\PatientDto.cs",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Contracts\\PatientDto.cs",
+              "RelativeToolTip": "src\\EhrLite.TimelineBff.Api\\Contracts\\PatientDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T09:15:37.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\EhrLite.TimelineBff.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\appsettings.json",
+              "RelativeToolTip": "src\\EhrLite.TimelineBff.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-28T09:13:23.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Dockerfile",
+              "RelativeDocumentMoniker": "src\\EhrLite.TimelineBff.Api\\Dockerfile",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.TimelineBff.Api\\Dockerfile",
+              "RelativeToolTip": "src\\EhrLite.TimelineBff.Api\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-28T07:30:10.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.PatientRegistry.Api\\Dockerfile",
+              "RelativeDocumentMoniker": "src\\EhrLite.PatientRegistry.Api\\Dockerfile",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.PatientRegistry.Api\\Dockerfile",
+              "RelativeToolTip": "src\\EhrLite.PatientRegistry.Api\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-28T07:29:41.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.Medications.Api\\Dockerfile",
+              "RelativeDocumentMoniker": "src\\EhrLite.Medications.Api\\Dockerfile",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.Medications.Api\\Dockerfile",
+              "RelativeToolTip": "src\\EhrLite.Medications.Api\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-28T07:29:17.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.LabsDocs.Api\\Dockerfile",
+              "RelativeDocumentMoniker": "src\\EhrLite.LabsDocs.Api\\Dockerfile",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.LabsDocs.Api\\Dockerfile",
+              "RelativeToolTip": "src\\EhrLite.LabsDocs.Api\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-28T07:28:36.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.Identity.Api\\Dockerfile",
+              "RelativeDocumentMoniker": "src\\EhrLite.Identity.Api\\Dockerfile",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.Identity.Api\\Dockerfile",
+              "RelativeToolTip": "src\\EhrLite.Identity.Api\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-28T07:28:17.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.Encounters.Api\\Dockerfile",
+              "RelativeDocumentMoniker": "src\\EhrLite.Encounters.Api\\Dockerfile",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.Encounters.Api\\Dockerfile",
+              "RelativeToolTip": "src\\EhrLite.Encounters.Api\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-28T07:27:46.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.ClinicalDocs.Api\\Dockerfile",
+              "RelativeDocumentMoniker": "src\\EhrLite.ClinicalDocs.Api\\Dockerfile",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.ClinicalDocs.Api\\Dockerfile",
+              "RelativeToolTip": "src\\EhrLite.ClinicalDocs.Api\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-28T07:26:51.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.Audit.Api\\Dockerfile",
+              "RelativeDocumentMoniker": "src\\EhrLite.Audit.Api\\Dockerfile",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.Audit.Api\\Dockerfile",
+              "RelativeToolTip": "src\\EhrLite.Audit.Api\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-28T07:26:08.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "PatientRegistryDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.PatientRegistry.Api\\PatientRegistryDbContext.cs",
+              "RelativeDocumentMoniker": "src\\EhrLite.PatientRegistry.Api\\PatientRegistryDbContext.cs",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.PatientRegistry.Api\\PatientRegistryDbContext.cs",
+              "RelativeToolTip": "src\\EhrLite.PatientRegistry.Api\\PatientRegistryDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T06:54:11.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.PatientRegistry.Api\\Program.cs",
+              "RelativeDocumentMoniker": "src\\EhrLite.PatientRegistry.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.PatientRegistry.Api\\Program.cs",
+              "RelativeToolTip": "src\\EhrLite.PatientRegistry.Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T06:53:57.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "MedicationsDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.Medications.Api\\MedicationsDbContext.cs",
+              "RelativeDocumentMoniker": "src\\EhrLite.Medications.Api\\MedicationsDbContext.cs",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.Medications.Api\\MedicationsDbContext.cs",
+              "RelativeToolTip": "src\\EhrLite.Medications.Api\\MedicationsDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T06:53:38.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.Medications.Api\\Program.cs",
+              "RelativeDocumentMoniker": "src\\EhrLite.Medications.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.Medications.Api\\Program.cs",
+              "RelativeToolTip": "src\\EhrLite.Medications.Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T06:53:14.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "LabsDocsDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.LabsDocs.Api\\LabsDocsDbContext.cs",
+              "RelativeDocumentMoniker": "src\\EhrLite.LabsDocs.Api\\LabsDocsDbContext.cs",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.LabsDocs.Api\\LabsDocsDbContext.cs",
+              "RelativeToolTip": "src\\EhrLite.LabsDocs.Api\\LabsDocsDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T06:49:08.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.LabsDocs.Api\\Program.cs",
+              "RelativeDocumentMoniker": "src\\EhrLite.LabsDocs.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.LabsDocs.Api\\Program.cs",
+              "RelativeToolTip": "src\\EhrLite.LabsDocs.Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T06:48:47.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "EhrLite.Audit.Api.http",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.Audit.Api\\EhrLite.Audit.Api.http",
+              "RelativeDocumentMoniker": "src\\EhrLite.Audit.Api\\EhrLite.Audit.Api.http",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.Audit.Api\\EhrLite.Audit.Api.http",
+              "RelativeToolTip": "src\\EhrLite.Audit.Api\\EhrLite.Audit.Api.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-12-28T06:48:44.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.Encounters.Api\\Program.cs",
+              "RelativeDocumentMoniker": "src\\EhrLite.Encounters.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.Encounters.Api\\Program.cs",
+              "RelativeToolTip": "src\\EhrLite.Encounters.Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T06:46:18.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "EncounterDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.Encounters.Api\\EncounterDbContext.cs",
+              "RelativeDocumentMoniker": "src\\EhrLite.Encounters.Api\\EncounterDbContext.cs",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.Encounters.Api\\EncounterDbContext.cs",
+              "RelativeToolTip": "src\\EhrLite.Encounters.Api\\EncounterDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T06:46:38.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "ClinicalDocsDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.ClinicalDocs.Api\\ClinicalDocsDbContext.cs",
+              "RelativeDocumentMoniker": "src\\EhrLite.ClinicalDocs.Api\\ClinicalDocsDbContext.cs",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.ClinicalDocs.Api\\ClinicalDocsDbContext.cs",
+              "RelativeToolTip": "src\\EhrLite.ClinicalDocs.Api\\ClinicalDocsDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T06:45:58.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.Identity.Api\\Program.cs",
+              "RelativeDocumentMoniker": "src\\EhrLite.Identity.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.Identity.Api\\Program.cs",
+              "RelativeToolTip": "src\\EhrLite.Identity.Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T06:44:53.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6d4078d1-5951-4ed1-ac0e-0a8099c1cce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "IdentityDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.Identity.Api\\IdentityDbContext.cs",
+              "RelativeDocumentMoniker": "src\\EhrLite.Identity.Api\\IdentityDbContext.cs",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.Identity.Api\\IdentityDbContext.cs",
+              "RelativeToolTip": "src\\EhrLite.Identity.Api\\IdentityDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T06:45:04.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "EhrLite.ClinicalDocs.Api.http",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.ClinicalDocs.Api\\EhrLite.ClinicalDocs.Api.http",
+              "RelativeDocumentMoniker": "src\\EhrLite.ClinicalDocs.Api\\EhrLite.ClinicalDocs.Api.http",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.ClinicalDocs.Api\\EhrLite.ClinicalDocs.Api.http",
+              "RelativeToolTip": "src\\EhrLite.ClinicalDocs.Api\\EhrLite.ClinicalDocs.Api.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-12-28T06:45:42.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.Audit.Api\\Program.cs",
+              "RelativeDocumentMoniker": "src\\EhrLite.Audit.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.Audit.Api\\Program.cs",
+              "RelativeToolTip": "src\\EhrLite.Audit.Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T06:39:44.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "AuditDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.Audit.Api\\AuditDbContext.cs",
+              "RelativeDocumentMoniker": "src\\EhrLite.Audit.Api\\AuditDbContext.cs",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.Audit.Api\\AuditDbContext.cs",
+              "RelativeToolTip": "src\\EhrLite.Audit.Api\\AuditDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T06:44:21.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.ClinicalDocs.Api\\Program.cs",
+              "RelativeDocumentMoniker": "src\\EhrLite.ClinicalDocs.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\src\\EhrLite.ClinicalDocs.Api\\Program.cs",
+              "RelativeToolTip": "src\\EhrLite.ClinicalDocs.Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T06:37:46.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "EhrLite.AppHost.csproj",
+              "DocumentMoniker": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\EhrLite.AppHost\\EhrLite.AppHost.csproj",
+              "RelativeDocumentMoniker": "EhrLite.AppHost\\EhrLite.AppHost.csproj",
+              "ToolTip": "C:\\Users\\ali yass\\Desktop\\EHR-Lite\\EhrLite.AppHost\\EhrLite.AppHost.csproj",
+              "RelativeToolTip": "EhrLite.AppHost\\EhrLite.AppHost.csproj",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-28T06:34:06.602Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
