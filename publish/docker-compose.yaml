@@ -224,7 +224,7 @@ services:
     image: "${TIMELINE_BFF_IMAGE}"
     environment:
       OTEL_DOTNET_EXPERIMENTAL_OTLP_EMIT_EXCEPTION_LOG_ATTRIBUTES: "true"
-      Timeline__IncludeOptional: "false"
+      Timeline__IncludeOptional: "true"
       Services__PatientRegistry__BaseUrl: "http://patient-registry:8080"
       Services__Encounters__BaseUrl: "http://encounters:8080"
       Services__ClinicalDocs__BaseUrl: "http://clinical-docs:8080"
