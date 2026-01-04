@@ -11,7 +11,7 @@ var app = builder.Build();
 
 app.MapOpenApi();
 app.MapDefaultEndpoints();
-//app.UseHttpsRedirection();
+app.UseHttpsRedirection();
 
 
 app.Run();

@@ -9,7 +9,7 @@ builder.AddNpgsqlDbContext<MedicationsDbContext>("medsdb");
 var app = builder.Build();
 
 app.MapOpenApi();
-//app.UseHttpsRedirection();
+app.UseHttpsRedirection();
 app.MapDefaultEndpoints();
 
 app.Run();

@@ -43,5 +43,5 @@ app.MapGet("/ping", () => Results.Ok(new
 
 app.MapOpenApi();
 app.MapDefaultEndpoints();
-//app.UseHttpsRedirection();
+app.UseHttpsRedirection();
 app.Run();
