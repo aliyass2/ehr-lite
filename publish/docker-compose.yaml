@@ -52,6 +52,14 @@ services:
       - "${IDENTITY_PORT}"
     networks:
       - "aspire"
+  redis:
+    image: "docker.io/library/redis:7.4-alpine"
+    expose:
+      - "6379"
+    networks:
+      - "aspire"
+    restart: "always"
+
   patient-registry:
     image: "${PATIENT_REGISTRY_IMAGE}"
     environment:
@@ -234,6 +242,7 @@ services:
       OTEL_DOTNET_EXPERIMENTAL_OTLP_EMIT_EVENT_LOG_ATTRIBUTES: "true"
       OTEL_DOTNET_EXPERIMENTAL_OTLP_RETRY: "in_memory"
       ASPNETCORE_FORWARDEDHEADERS_ENABLED: "true"
+      ConnectionStrings__redis: "redis:6379"
       HTTP_PORTS: "${TIMELINE_BFF_PORT}"
       OTEL_EXPORTER_OTLP_ENDPOINT: "http://compose-dashboard:18889"
       OTEL_EXPORTER_OTLP_PROTOCOL: "grpc"

@@ -1,6 +1,9 @@
+using EhrLite.TimelineBff.Api.Caching;
 using EhrLite.TimelineBff.Api.Clients;
 using EhrLite.TimelineBff.Api.Contracts;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using Microsoft.Extensions.Caching.Distributed;
+using StackExchange.Redis;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
@@ -45,6 +48,32 @@ builder.Services.AddHttpClient<LabsDocsClient>((sp, http) =>
     var opt = sp.GetRequiredService<Microsoft.Extensions.Options.IOptionsMonitor<ServiceOptions>>().Get("LabsDocs");
     http.BaseAddress = new Uri(opt.BaseUrl);
 });
+var redisConn = builder.Configuration.GetConnectionString("redis");
+
+if (!string.IsNullOrWhiteSpace(redisConn))
+{
+    // NOTE: ConnectAsync returns Task<ConnectionMultiplexer> (concrete type)
+    var muxLazy = new Lazy<Task<ConnectionMultiplexer>>(
+        () => ConnectionMultiplexer.ConnectAsync(redisConn));
+
+    builder.Services.AddSingleton<IConnectionMultiplexer>(_ =>
+        muxLazy.Value.GetAwaiter().GetResult());
+
+    builder.Services.AddStackExchangeRedisCache(o =>
+    {
+        o.InstanceName = "ehr-lite:";
+        // factory expects Task<IConnectionMultiplexer>
+        o.ConnectionMultiplexerFactory = () => muxLazy.Value.ContinueWith<IConnectionMultiplexer>(
+            t => t.Result,
+            TaskContinuationOptions.OnlyOnRanToCompletion);
+    });
+}
+else
+{
+    builder.Services.AddDistributedMemoryCache();
+}
+
+
 
 builder.Services.AddHttpClient<AuditClient>((sp, http) =>
 {
@@ -59,6 +88,7 @@ app.UseSwagger();
 app.UseSwaggerUI();
 app.MapGet("/api/timeline/{patientId:guid}", async (
     Guid patientId,
+    HttpRequest request,
     IConfiguration config,
     PatientRegistryClient patients,
     EncountersClient encounters,
@@ -66,8 +96,12 @@ app.MapGet("/api/timeline/{patientId:guid}", async (
     MedicationsClient meds,
     LabsDocsClient labs,
     AuditClient audit,
+    IDistributedCache cache,
+    ILogger<Program> logger,
     CancellationToken ct) =>
 {
+    logger.LogInformation("IDistributedCache impl: {Type}", cache.GetType().FullName);
+
     static async Task<T?> Safe<T>(Func<Task<T?>> action)
     {
         try { return await action(); }
@@ -80,13 +114,47 @@ app.MapGet("/api/timeline/{patientId:guid}", async (
         catch { return []; }
     }
 
-    // Day 2: false (only 3 services)
-    // Day 3: true (enable meds/labs/audit)
     var includeOptional = config.GetValue("Timeline:IncludeOptional", false);
 
-    var patientTask = Safe(() => patients.GetPatientAsync(patientId, ct));
-    var encountersTask = SafeList(() => encounters.ListAsync(patientId, ct));
-    var notesTask = SafeList(() => clinicalDocs.ListNotesAsync(patientId, ct));
+    // /api/timeline/{id}?nocache=true
+    var noCache = request.Query.TryGetValue("nocache", out var v) &&
+                  string.Equals(v.ToString(), "true", StringComparison.OrdinalIgnoreCase);
+
+    static string K(string part, Guid id) => $"timeline:v1:{part}:{id}";
+
+    // ---------- CACHED TASKS ----------
+    Task<PatientDto?> patientTask;
+    Task<IReadOnlyList<EncounterDto>> encountersTask;
+    Task<IReadOnlyList<ClinicalNoteDto>> notesTask;
+
+    if (!noCache)
+    {
+        patientTask = cache.GetOrCreateJsonAsync(
+            K("patient", patientId),
+            TimeSpan.FromMinutes(30),
+            () => Safe(() => patients.GetPatientAsync(patientId, ct)),
+            ct);
+
+        encountersTask = cache.GetOrCreateJsonListAsync(
+            K("encounters", patientId),
+            TimeSpan.FromMinutes(2),
+            () => SafeList(() => encounters.ListAsync(patientId, ct)),
+            ct,
+            cacheEmpty: true);
+
+        notesTask = cache.GetOrCreateJsonListAsync(
+            K("notes", patientId),
+            TimeSpan.FromMinutes(2),
+            () => SafeList(() => clinicalDocs.ListNotesAsync(patientId, ct)),
+            ct,
+            cacheEmpty: true);
+    }
+    else
+    {
+        patientTask = Safe(() => patients.GetPatientAsync(patientId, ct));
+        encountersTask = SafeList(() => encounters.ListAsync(patientId, ct));
+        notesTask = SafeList(() => clinicalDocs.ListNotesAsync(patientId, ct));
+    }
 
     await Task.WhenAll(patientTask, encountersTask, notesTask);
 
@@ -99,12 +167,42 @@ app.MapGet("/api/timeline/{patientId:guid}", async (
         new TimelineItem("clinical-note", n.CreatedAt, n.Title,
             n.Body.Length > 120 ? n.Body[..120] + "..." : n.Body, n)));
 
-    // IMPORTANT: optional calls are created only when enabled
     if (includeOptional)
     {
-        var medsTask = SafeList(() => meds.ListAsync(patientId, ct));
-        var labsTask = SafeList(() => labs.ListAsync(patientId, ct));
-        var auditTask = SafeList(() => audit.ListAsync(patientId, ct));
+        Task<IReadOnlyList<MedicationDto>> medsTask;
+        Task<IReadOnlyList<LabResultDto>> labsTask;
+        Task<IReadOnlyList<AuditDto>> auditTask;
+
+        if (!noCache)
+        {
+            medsTask = cache.GetOrCreateJsonListAsync(
+                K("meds", patientId),
+                TimeSpan.FromMinutes(10),
+                () => SafeList(() => meds.ListAsync(patientId, ct)),
+                ct,
+                cacheEmpty: true);
+
+            labsTask = cache.GetOrCreateJsonListAsync(
+                K("labs", patientId),
+                TimeSpan.FromMinutes(10),
+                () => SafeList(() => labs.ListAsync(patientId, ct)),
+                ct,
+                cacheEmpty: true);
+
+            auditTask = cache.GetOrCreateJsonListAsync(
+                K("audit", patientId),
+                TimeSpan.FromSeconds(30),
+                () => SafeList(() => audit.ListAsync(patientId, ct)),
+                ct,
+                cacheEmpty: true);
+
+        }
+        else
+        {
+            medsTask = SafeList(() => meds.ListAsync(patientId, ct));
+            labsTask = SafeList(() => labs.ListAsync(patientId, ct));
+            auditTask = SafeList(() => audit.ListAsync(patientId, ct));
+        }
 
         await Task.WhenAll(medsTask, labsTask, auditTask);
 
@@ -117,6 +215,7 @@ app.MapGet("/api/timeline/{patientId:guid}", async (
 
         items.AddRange(auditTask.Result.Select(a =>
             new TimelineItem("audit", a.At, a.Action, a.Actor, a)));
+
     }
 
     var ordered = items.OrderByDescending(x => x.At).ToList();

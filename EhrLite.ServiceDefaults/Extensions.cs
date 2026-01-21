@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Logging;
@@ -7,6 +8,7 @@ using Microsoft.Extensions.ServiceDiscovery;
 using OpenTelemetry.Logs;
 using OpenTelemetry.Metrics;
 using OpenTelemetry.Trace;
+using StackExchange.Redis;
 
 namespace Microsoft.Extensions.Hosting;
 
@@ -37,52 +39,48 @@ public static class Extensions
     {
         var useOtlp = !string.IsNullOrWhiteSpace(builder.Configuration["OTEL_EXPORTER_OTLP_ENDPOINT"]);
 
-        // LOGS
-        builder.Logging.AddOpenTelemetry(logging =>
+        // If this service has a redis connection string, register a single multiplexer in DI.
+        // (Only timeline-bff has ConnectionStrings__redis in your compose.)
+        builder.Logging.AddOpenTelemetry(o =>
         {
-            logging.IncludeFormattedMessage = true;
-            logging.IncludeScopes = true;
-            logging.ParseStateValues = true;
-
-            if (useOtlp)
-            {
-                // ✅ Signal-specific exporter (logs)
-                logging.AddOtlpExporter();
-            }
+            o.IncludeFormattedMessage = true;
+            o.IncludeScopes = true;
+            o.ParseStateValues = true;
+            if (useOtlp) o.AddOtlpExporter();
         });
 
-        // TRACES + METRICS
-        builder.Services.AddOpenTelemetry()
-            .WithMetrics(metrics =>
-            {
-                metrics.AddAspNetCoreInstrumentation()
-                       .AddHttpClientInstrumentation()
-                       .AddRuntimeInstrumentation();
+builder.Services.AddOpenTelemetry()
+    .WithMetrics(metrics =>
+    {
+        metrics.AddAspNetCoreInstrumentation()
+               .AddHttpClientInstrumentation()
+               .AddRuntimeInstrumentation();
 
-                if (useOtlp)
-                {
-                    // ✅ Signal-specific exporter (metrics)
-                    metrics.AddOtlpExporter();
-                }
-            })
-            .WithTracing(tracing =>
-            {
-                tracing.AddSource(builder.Environment.ApplicationName)
-                       .AddAspNetCoreInstrumentation(o =>
-                           o.Filter = ctx =>
-                               !ctx.Request.Path.StartsWithSegments(HealthEndpointPath) &&
-                               !ctx.Request.Path.StartsWithSegments(AlivenessEndpointPath))
-                       .AddHttpClientInstrumentation();
+        if (useOtlp) metrics.AddOtlpExporter();
+    })
+    .WithTracing(tracing =>
+    {
+        tracing.AddSource(builder.Environment.ApplicationName)
+               .AddAspNetCoreInstrumentation(o =>
+                   o.Filter = ctx =>
+                       !ctx.Request.Path.StartsWithSegments(HealthEndpointPath) &&
+                       !ctx.Request.Path.StartsWithSegments(AlivenessEndpointPath))
+               .AddHttpClientInstrumentation();
 
-                if (useOtlp)
-                {
-                    // ✅ Signal-specific exporter (traces)
-                    tracing.AddOtlpExporter();
-                }
-            });
+        // Only enable Redis instrumentation when redis is configured
+        var redisConn = builder.Configuration.GetConnectionString("redis");
+        if (!string.IsNullOrWhiteSpace(redisConn))
+        {
+            tracing.AddRedisInstrumentation();
+        }
+
+        if (useOtlp) tracing.AddOtlpExporter();
+    });
+
 
         return builder;
     }
+
 
     public static TBuilder AddDefaultHealthChecks<TBuilder>(this TBuilder builder)
         where TBuilder : IHostApplicationBuilder
